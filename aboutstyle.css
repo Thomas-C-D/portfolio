@@ -1,10 +1,10 @@
+:root {
+    --biohover: #0e0aff;
 
-
-
-
+}
 
 #aboutme-text {
-    color: red;
+    color: black;
     display: flex;
     flex-direction: column;
     height: 650px;
@@ -18,7 +18,7 @@
 #biochars {
     position: relative;
     bottom: 0;
-    transition: bottom .3s;
+    transition: all .3s;
     cursor: default;
     height: 500px;
 
@@ -27,7 +27,7 @@
 #biochars:hover {
 position: relative;
 bottom: 5px;
-
+color: var(--biohover);
 
 }
 #links {
@@ -60,11 +60,12 @@ top: 5px;
 
 #about-imageset {
     background-color: green;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     position: fixed;
-    bottom: 100px;
-    right: 20px;
+    bottom: 50px;
+    right: 0;
+    border: 2px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
