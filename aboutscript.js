@@ -1,3 +1,6 @@
+// About Me script 
+// -------------------------
+
 let bioTxt = document.querySelector("#bio");
 let bioSpan = document.querySelector("#biochars");
 function appndBio(txt) {
@@ -15,14 +18,16 @@ var roots = document.querySelector(':root');
 
 
 function charCol(){
-    if (x == bioarray.length){
+    if (x == (bioarray.length - 1)){
+        
         x = 0;
-        console.log(`${bioarray[x]}, ${x}`);
+        
         
     }
     else {
+       
         x++;
-        console.log(`${bioarray[x]}, ${x}`);
+       
         
     }
     roots.style.setProperty('--biohover', `${bioarray[x]}`);
