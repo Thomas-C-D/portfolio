@@ -126,3 +126,24 @@ top: 5px;
     justify-content: center;
     align-items: center;
 }
+
+/* Minigame styling */
+/* ------------------------ */
+
+#minigamepage-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+#minigamearea {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 260px;
+    bottom: 200px;
+    justify-content: center;
+    align-items: center;
+}
