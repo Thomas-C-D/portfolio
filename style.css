@@ -65,6 +65,7 @@ top: 5px;
     border: none;
     color: red;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #about-imageset {
@@ -80,7 +81,26 @@ top: 5px;
     justify-content: center;
     font-size: 50px;
 }
-
+#resume-section {
+    display: flex;
+    justify-content: center;
+}
+#resume-modal {
+    background-color: darkcyan;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#resume-modal * {
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 400px;
+}
 /* Showcase styling */
 /* ----------------------- */
 #showcasepage-links {
@@ -146,4 +166,5 @@ top: 5px;
     bottom: 200px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
