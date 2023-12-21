@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="aboutscript.js"></script>
 </head>
-<body>
+<body id="aboutme-body">
     <div id="aboutme-text">
         <nav id="aboutpage-links">
-            <a href="showcase.html"><button id="pagebutton">My Work</button></a>
-            <a href="minigame.html"><button id="pagebutton">Minigame</button></a>       
+            <a href="showcase.html"><button class="pagebutton">My Work</button></a>
+            <a href="minigame.html"><button class="pagebutton">Minigame</button></a>       
         </nav>
+</div>
+    <section id="bioandimage">
+        <section id="biosection">
 <h1 id="greeting">Greeting</h1>
 <p id="bio"></p>
-    </div>
+        </section>
+        
     <div id="about-imageset">images</div>
+    </section>
     <nav id="links">
         <button id="resume-open">Resume</button>
         <a href="https://www.linkedin.com/in/thomas-dobrose-053b51298/"><button class="outer-links">LinkedIn</button></a>
@@ -25,7 +30,11 @@
     </nav>
     <section id="resume-section">
         <div id="resume-modal">
+            <button id="resume-close">X</button>
+            <section id="modal-content">
             <h1>RESUME</h1>
+            </section>
     </div></section>
+    <section id="modal-film"></section>
 </body>
 </html>

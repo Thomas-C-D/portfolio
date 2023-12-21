@@ -1,5 +1,3 @@
-// About Me script 
-// -------------------------
 
 let bioTxt = document.querySelector("#bio");
 let bioSpan = document.querySelector("#biochars");
@@ -31,4 +29,17 @@ function charCol(){
         
     }
     roots.style.setProperty('--biohover', `${bioarray[x]}`);
+}
+
+// Script for resume modal
+document.querySelector('#resume-open').addEventListener('click', openResume);
+document.querySelector('#resume-close').addEventListener('click', closeResume);
+
+function openResume() {
+    document.querySelector('#resume-modal').style.top = '80px';
+    document.querySelector('#modal-film').style.display = 'block';
+}
+function closeResume() {
+    document.querySelector('#resume-modal').style.top = '900px';
+    document.querySelector('#modal-film').style.display = 'none';
 }
