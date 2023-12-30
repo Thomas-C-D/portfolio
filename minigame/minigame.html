@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../main.css">
     <script defer src="minigamescript.js"></script>
 </head>
-<body>
+<body id="minigamebody">
     <nav id="minigamepage-links">
         <a href ='../aboutme/aboutme.html'><button class="pagebutton">About Me</button></a>
         <a href="../showcase/showcase.html"><button class="pagebutton">My Work</button></a>
@@ -15,26 +15,27 @@
     <section id="minigamesection">
     <div id="minigamescreen">
         <section id="minigameinstructions">
-            <h1>Instructions</h1>
-        <button id="minigamebutton">Begin</button>
+            <img src="./Images/DeliveryLogo.png"></img>
+            <div id ='instructiontext'>Welcome to the game Delivery! Press the button below to begin!</div>
+        <img id="minigamebutton" src="./Images/ButtonStart.png"></img>
         <div id="winslosses">Wins: 0  Losses: 0</div>
     </section>
         <section id="sprites">
-            <div id="titlescreen">TITLESCREEN</div>
+            <img id="titlescreen" src="./Images/TitleScreen.png"></img>
             <div id="deliveries">
-                <div class="delivery" id="delivery1">1</div> 
-                <div class="delivery" id="delivery2">2</div> 
-                <div class="delivery" id="delivery3">3</div> 
+                <img class="delivery" id="delivery1"></img> 
+                <img class="delivery" id="delivery2"></img> 
+                <img class="delivery" id="delivery3"></img> 
             </div> 
             <section id="thoughts">
-                <div class="thought" id="thought1">1</div>
-                <div class="thought" id="thought2">2</div>
-                <div class="thought" id="thought3">3</div>
+                <img class="thought" id="thought1"></img>
+                <img class="thought" id="thought2"></img>
+                <img class="thought" id="thought3"></img>
             </section>
             <section id="customers">
-                <div class="customer" id="customer1">1</div>
-                <div class="customer" id="customer2">2</div>
-                <div class="customer" id="customer3">3</div>
+                <img class="customer" id="customer1"></img>
+                <img class="customer" id="customer2"></img>
+                <img class="customer" id="customer3"></img>
             </section>
         </section>
     </div>
