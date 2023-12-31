@@ -30,29 +30,33 @@ justify-content: space-around;
 }
 #bioandimage {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     position: relative;
 }
 #biosection {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: 400px;
+    text-align: left;
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+    height: 100px;
 }
 #biosection * {
     font-size: 120%;
+}
+#greeting {
+    font-size: 150%;
 }
 #biochars {
     position: relative;
     bottom: 0;
     transition: all .3s;
     cursor: default;
-    height: 500px;
     background-color: transparent;
     
 }
-
 #biochars:hover {
 position: relative;
 bottom: 5px;
@@ -65,6 +69,8 @@ color: var(--biohover);
     justify-content: space-around;
     width: 100%;
     height: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 .outer-links {
@@ -87,12 +93,16 @@ width: 100%;
     font-size: 20px;
     cursor: pointer;
 }
-
 #about-imageset {
-    background-color: green;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+#about-selfportrait {
+    
     width: 600px;
     height: 600px;
-    border: 2px solid blue;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,6 +110,37 @@ width: 100%;
     position: relative;
     bottom: 0;
     right: 0;
+}
+#about-imagecircle1 {
+    display: flex;
+    
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: -2;
+    right: 210px;
+    top: 250px;
+    rotate: 0deg;
+    animation: circlerotate1 7s linear infinite;
+}
+#about-imagecircle2 {
+    
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    right: 240px;
+    top: 280px;
+    rotate: 0deg;
+    animation: circlerotate2 7s linear infinite;
+}
+#about-clouds {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    top: 300px;
+    right: 600px;
+    z-index: -3;
 }
 #resume-open {
     cursor: pointer;
@@ -119,6 +160,10 @@ width: 100%;
     top: 900px;
     z-index: 2;
     transition: top .5s;
+}
+object {
+    height: 700px;
+    font-size: 50px;
 }
 #modal-content {
     display: flex;
@@ -152,12 +197,35 @@ cursor: pointer;
     position: absolute;
 }
 
+@keyframes circlerotate1 {
+    0% {rotate: 360deg;}
+}
+
+@keyframes circlerotate2 {
+    0% {rotate: -360deg;}
+}
+
+@media only screen and (max-width: 900px) {
+    #resume-modal {
+        scale: 80%;
+    }
+    #about-imageset {
+        right: 100px;
+    }
+    #biosection {
+       scale: 40%;
+       text-align: center;
+       width: 200px;
+    }
+}
+
+
 /* Showcase styling */
 /* ----------------------- */
 #showcasepage-links {
     background-color: black;
     display: flex;
-    position: fixed;
+    position: relative;
     justify-content: space-around;
     top: 0;
     left: 0;
@@ -324,7 +392,6 @@ bottom: 0;
     top: 0;
 }
 #titlescreen {
-    background-color: red;
     width: 100%;
     height: 100%;
     display: flex;
@@ -335,6 +402,7 @@ bottom: 0;
     
     height: 400px;
 }
+
 
 
 @media screen and (max-width: 1000px){

@@ -8,7 +8,7 @@ function appndBio(txt) {
     }
 
 }
-appndBio("Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur. Sequi atque, adipisci unde libero minima quibusdam cum saepe quae. Expedita recusandae architecto quas at quis, dolorum optio tenetur porro.")
+appndBio(`I'm a graphic designer, artist, front-end software developer and General Assembly alumni from Kentucky. I've loved art, video games, and animation as far back as I can remember, and now I'm making my own works, too. Whether you're looking for someone promising or you're just here to browse, I've got it all - a sophisticated sense for web design, sleek animation skills, and an intelligent art direction cultivated through all the artists that have inspired me over the years. Come on in. Let me show you around. `)
 
 let x = 0;
 const bioarray = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
