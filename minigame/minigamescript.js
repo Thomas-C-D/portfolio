@@ -132,47 +132,29 @@ const thought3 = new Thought('#thought3', 2);
 
 const thoughts = [thought1, thought2, thought3];
 
-// function thoughtCheck() {
-    // for (let t in thoughts){
-        // if (answers[t] == guesses[t]){
-        // thoughts[t].itemnum.style.backgroundColor = "pink";
-        // }
-        // else{
-            // thoughts[t].itemnum.style.backgroundColor = answers[t];
-        // }
-    // }
-// }
-for (let d in deliveries) {
-    deliveries[d].getFood();
-    // document.querySelector(`#${deliveries[d].itemnum.id}`).addEventListener('click', function() {
-        // deliveries[d].foodswap();
-        // })
-}
-function dswap1(){
-    delivery1.foodswap();
- }
- function dswap2(){
-    delivery2.foodswap();
- }
- function dswap3(){
-    delivery3.foodswap();
- }
-document.querySelector(`#${delivery1.itemnum.id}`).addEventListener('click', dswap1);
-document.querySelector(`#${delivery2.itemnum.id}`).addEventListener('click', dswap2);
-document.querySelector(`#${delivery3.itemnum.id}`).addEventListener('click', dswap3);
-for (let c in customers){
-    customers[c].getOrder();
-}
-console.log(guesses, answers)
+    for (let d in deliveries) {
+        deliveries[d].getFood();
+    }
+    function dswap1(){
+        delivery1.foodswap();
+    }
+    function dswap2(){
+        delivery2.foodswap();
+    }
+    function dswap3(){
+     delivery3.foodswap();
+    }
+    document.querySelector(`#${delivery1.itemnum.id}`).addEventListener('click', dswap1);
+    document.querySelector(`#${delivery2.itemnum.id}`).addEventListener('click', dswap2);
+    document.querySelector(`#${delivery3.itemnum.id}`).addEventListener('click', dswap3);
+    for (let c in customers){
+        customers[c].getOrder();
+    }
 
 function gameAction() {
-    // for (let c in customers) {
-//     customers[c].feedBack();
-//    
-// };
-if (answers[0] == guesses[0] && answers[1] == guesses[1] && answers[2] == guesses[2]){
-    chances = 5;
-}
+    if (answers[0] == guesses[0] && answers[1] == guesses[1] && answers[2] == guesses[2]){
+     chances = 5;
+    }
 else {
 chances++;
 }
@@ -183,13 +165,12 @@ for (let c in customers) {
    
 
 };
-// thoughtCheck();
+
 for (let t in thoughts){
     thoughts[t].thoughtCheck();
 }
-console.log(guesses, answers, chances);
 
-deliverylook.style.top = `${(chances * 100)}px`;
+    deliverylook.style.top = `${(chances * 100)}px`;
 if (chances == 5)
 {  if (guesses[0] == answers[0] && guesses[1] == answers[1] && guesses[2] == answers[2])
     {
@@ -203,8 +184,8 @@ if (chances == 5)
         document.querySelector('#winslosses').innerHTML = `Wins: ${wins} Losses: ${losses}`;
     }
     document.querySelector(`#${delivery1.itemnum.id}`).removeEventListener('click', dswap1);
- document.querySelector(`#${delivery2.itemnum.id}`).removeEventListener('click', dswap2);
- document.querySelector(`#${delivery3.itemnum.id}`).removeEventListener('click', dswap3);
+    document.querySelector(`#${delivery2.itemnum.id}`).removeEventListener('click', dswap2);
+    document.querySelector(`#${delivery3.itemnum.id}`).removeEventListener('click', dswap3);
     customerlook.style.bottom = '150px';
     thoughtlook.style.display = 'flex';
     gamebutton.removeEventListener('click', gameAction);

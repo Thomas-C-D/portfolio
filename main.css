@@ -13,27 +13,31 @@
 /* ------------------------- */
 #aboutme-body {
     overflow: hidden;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 #aboutmemain {
     display: flex;
 flex-direction: column;
 justify-content: space-around;
 }
+
 #aboutme-text {
     color: black;
     display: flex;
     justify-content: center;
     font-size: 150%;
 }
+
 #bioandimage {
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
 }
+
 #biosection {
     display: flex;
     flex-direction: column;
@@ -43,12 +47,15 @@ justify-content: space-around;
     bottom: 50px;
     height: 100px;
 }
+
 #biosection * {
     font-size: 120%;
 }
+
 #greeting {
     font-size: 150%;
 }
+
 #biochars {
     position: relative;
     bottom: 0;
@@ -57,12 +64,14 @@ justify-content: space-around;
     background-color: transparent;
     
 }
+
 #biochars:hover {
 position: relative;
 bottom: 5px;
 color: var(--biohover);
 
 }
+
 #links {
     background-color: black;
     display: flex;
@@ -75,34 +84,32 @@ color: var(--biohover);
 
 .outer-links {
 cursor: pointer;
-
 }
 
 #aboutpage-links {
 display: flex;
 justify-content: space-around;
 width: 100%;
-
-
 }
 
 .pagebutton {
-    background-color: transparent;
-    border: none;
-    color: red;
+    background-color: rgb(174, 145, 84);
+    color: rgb(88, 60, 5);
     font-size: 20px;
     cursor: pointer;
+    border: 3px solid rgb(88, 60, 5);
+    border-radius: 5px;
 }
+
 #about-imageset {
     position: relative;
     bottom: 0;
     right: 0;
 }
+
 #about-selfportrait {
-    
     width: 600px;
     height: 600px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +118,7 @@ width: 100%;
     bottom: 0;
     right: 0;
 }
+
 #about-imagecircle1 {
     display: flex;
     
@@ -123,8 +131,8 @@ width: 100%;
     rotate: 0deg;
     animation: circlerotate1 7s linear infinite;
 }
-#about-imagecircle2 {
-    
+
+#about-imagecircle2 {  
     width: 120px;
     height: 120px;
     position: absolute;
@@ -134,6 +142,7 @@ width: 100%;
     rotate: 0deg;
     animation: circlerotate2 7s linear infinite;
 }
+
 #about-clouds {
     position: absolute;
     width: 250px;
@@ -142,14 +151,19 @@ width: 100%;
     right: 600px;
     z-index: -3;
 }
+
 #resume-open {
     cursor: pointer;
-
+    background-color: rgb(183, 11, 11);
+    border: 2px solid white;
+    font-weight: bold;
 }
+
 #resume-section {
     display: flex;
     justify-content: center;
 }
+
 #resume-modal {
     background-color: darkcyan;
     border: 2px solid transparent;
@@ -161,6 +175,7 @@ width: 100%;
     z-index: 2;
     transition: top .5s;
 }
+
 object {
     height: 700px;
     font-size: 50px;
@@ -171,6 +186,7 @@ object {
     justify-content: center;
     align-items: center;
 }
+
 #modal-content * {
     border-bottom: 1px solid black;
     text-align: center;
@@ -178,13 +194,13 @@ object {
 }
 
 #resume-close {
-width: 50px;
-height: 50px;
-color: white;
-background-color: transparent;
-border: 2px solid white;    
-justify-self: left;
-cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;    
+    justify-self: left;
+    cursor: pointer;
 }
 
 #modal-film {
@@ -196,7 +212,12 @@ cursor: pointer;
     display: none;
     position: absolute;
 }
-
+.outer-links {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
 @keyframes circlerotate1 {
     0% {rotate: 360deg;}
 }
@@ -213,9 +234,11 @@ cursor: pointer;
         right: 100px;
     }
     #biosection {
-       scale: 40%;
-       text-align: center;
+       scale: 80%;
        width: 200px;
+    }
+    #bio {
+        width: 300px;
     }
 }
 
@@ -233,58 +256,418 @@ cursor: pointer;
     height: 50px;
     z-index: 1;
 }
+
 #posterCollection {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
-    background-color: green;
+    height: 700px;
+    background-color: rgb(239, 255, 239);
 }
 
+#posters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 100%;
+}
+
+.shadowedimage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .poster {
-    background-color: grey;
     height: 300px;
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: scale .5s;
+    transition: top .5s ease;
+    position: relative;
+    top: 0;
 }
+
 .poster:hover {
-    scale: 1.2;
+    top: -20px;
 }
+
+.shadow {
+    width: 300px;
+    height: 50px;
+    opacity: 40%;
+}
+
 #graphicdesignCollection {
-    background-color: darkblue;
+    background-color: #010821FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 3000px;
+    overflow: hidden;
+}
+
+#designheading {
+    color: white;
+    font-size: 200%;
+}
+
+.showcasegraphic {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+#graphic1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stripe {
+    height: 200px;
+    border-radius: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+#stripe1 {
+ background-color: rgb(255, 229, 182);
+ width: 1300px;
+ animation: stripeanimation3 7s .6s ease infinite;
+}
+
+#stripe2 {
+    background-color: rgb(255, 203, 106);
+    width: 1700px;
+    animation: stripeanimation2 7s .5s ease infinite;
+ }
+
+#stripe3 {
+    background-color: orange;
+    width: 2000px;
+    animation: stripeanimation1 7s .4s ease infinite;
+}
+
+#graphic2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sparkle {
+    color: white;
+    font-size: 300px;
+    scale: 0%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1500px;
+}
+
+#sparkle1 {
+    position: relative;
+    animation: sparkleanimation 2s .1s ease infinite;
+}
+
+#sparkle2 {
+    position: relative;
+    bottom: 130px;
+    animation: sparkleanimation 2s .2s ease infinite;
+}
+#sparkle3 {
+    position: relative;
+    bottom: 40px;
+    animation: sparkleanimation 2s .3s ease infinite;
+}
+
+#sparkle4 {
+    position: relative;
+    animation: sparkleanimation 2s .4s ease infinite;
+}
+
+#sparkle5 {
+    position: relative;
+    bottom: -60px;
+    animation: sparkleanimation 2s .5s ease infinite;
+}
+
+#sparkle6 {
+    position: relative;
+    bottom: -120px;
+    animation: sparkleanimation 2s .6s ease infinite;
+}
+
+#graphic3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.alert {
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0px;
+    border-radius: 20px;
+    border: 0px dashed red;
+    
+    
+}
+
+.alert1 {
+    animation: alertanimation 2s .5s ease infinite;
+}
+
+.alert2 {
+    animation: alertanimation 2s .7s ease infinite;
+}
+
+.alert3 {
+    animation: alertanimation 2s .9s ease infinite;
 }
 
 #miscCollection {
     background-color: lightyellow;
-    height: 400px;
+    height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+#othersites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.sitelink {
+    max-width: 200px;
+    max-height: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    transition: all .4s ease;
+    position: relative;
+    top: 0;
+}
+
+.sitelink:hover {
+    border-radius: 10px;
+    top: -20px;
+}
+@keyframes stripeanimation1 {
+    0% {
+        background-color: white;
+        right: 4000px;
+    }
+    5% {
+        
+    }
+    10% {
+        right: 1000px;
+        background-color: white;
+    }
+    15% {
+        background-color: orange;
+    }
+    40% {right: 1000px;
+
+    }
+    43% {
+        background-color: orange;
+    }
+    62% {
+        right: -1000px;
+        background-color: orange;
+    }
+    66% {
+        background-color: white;
+    }
+    90% {
+        right: -3000px;
+        background-color: white;
+    }
+    100% {
+        right: -3000px;
+        background-color: white;
+    }
+}
+
+@keyframes stripeanimation2 {
+    0% {
+        background-color: white;
+        right: 4000px;
+    }
+    5% {
+        
+    }
+    10% {
+        right: 1000px;
+        background-color: white;
+    }
+    15% {
+        background-color: rgb(255, 203, 106);
+    }
+    40% {right: 1000px;
+
+    }
+    43% {
+        background-color: rgb(255, 203, 106);
+    }
+    62% {
+        right: -1000px;
+        background-color: rgb(255, 203, 106);
+    }
+    66% {
+        background-color: white;
+    }
+    90% {
+        right: -3000px;
+        background-color: white;
+    }
+    100% {
+        right: -3000px;
+        background-color: white;
+    }
+}
+
+@keyframes stripeanimation3 {
+    0% {
+        background-color: white;
+        right: 4000px;
+    }
+    5% {
+        
+    }
+    10% {
+        right: 1000px;
+        background-color: white;
+    }
+    15% {
+        background-color: rgb(255, 229, 182);
+    }
+    40% {right: 1000px;
+
+    }
+    43% {
+        background-color: rgb(255, 229, 182);
+    }
+    62% {
+        right: -1000px;
+        background-color: rgb(255, 229, 182);
+    }
+    66% {
+        background-color: white;
+    }
+    90% {
+        right: -3000px;
+        background-color: white;
+    }
+    100% {
+        right: -3000px;
+        background-color: white;
+    }
+}
+
+@keyframes sparkleanimation {
+    0% {
+        scale: 0%;
+    }
+    10% {
+        scale: 100%;
+    }
+    30% {
+        scale: 0%;
+    }
+    100% {
+        scale: 0%;
+        rotate: 360deg;
+    }
+}
+
+@keyframes alertanimation {
+    0% {
+        font-size: 0px;
+        border-width: 0;
+    }
+    10% {
+        border-width: 0;
+    }
+    20% {
+        font-size: 200px;
+    
+    }
+    22% {
+        font-size: 200px;
+        
+    }
+    25% {
+        border-width: 5px;
+    }
+    50% {
+        font-size: 0px;
+    }
+    60% {
+        border-width: 0;
+    }
+    100% {
+        font-size: 0px;
+        border-width: 0;
+    }
+}
+@media only screen and (max-width: 900px){
+   .shadowedimage {
+       width: 70px;
+       scale: 60%;
+    }
+    #posters {
+        justify-content: space-around;
+        
+    }
+    .showcasegraphic {
+        scale: 50%;
+    }
+    #othersites .shadowedimage{
+        width: 40px;
+        scale: 50%;
+    }
+}
 /* Minigame styling */
 /* ------------------------ */
-
+#minigamebody {
+    background-color: rgb(214, 214, 189);
+}
 #minigamepage-links {
     display: flex;
     justify-content: space-around;
 }
+
 #minigamesection {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 #minigamescreen {
     display: flex;
     border: 5px solid black;
+    background-color: white;
     border-radius: 20px;
     width: 1200px;
     height: 700px;
@@ -305,27 +688,25 @@ cursor: pointer;
 
 #minigameinstructions * {
     color: darkslategray;
-     border-bottom: 1px solid darkslategrey;
-     text-align: center;
-     width: 300px;
-     margin: 10px;
+    border-bottom: 1px solid darkslategrey;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
 }
-
-
 
 #griddiv {
     background-color: yellow;
 }
+
 #sprites {
-   
     height: 600px;
     width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
 }
+
 #deliveries {
     align-self: flex-start;
     display: none;
@@ -338,11 +719,10 @@ cursor: pointer;
     z-index: 1;
     transition: top .5s ease;
 }
+
 .delivery {
-    
     height: 105px;
     width: 105px;
-    
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -352,13 +732,13 @@ cursor: pointer;
 display: none;
 justify-content: space-around;
 align-items: center;
-
 width: 100%;
 height: 25%;
 align-self:flex-end;
 position: relative;
 bottom: 0;
 } 
+
 .customer {
     display: flex;
     justify-content: center;
@@ -368,12 +748,14 @@ bottom: 0;
     
     
 }
+
 #thoughts {
     display: none;
     justify-content: space-around;
     width: 100%;
     
 }
+
 .thought {
     
     width: 140px;
@@ -381,6 +763,7 @@ bottom: 0;
     position: relative;
     bottom: 50px;
 }
+
 #minigamebutton {
     width: 70px;
     height: 70px;
@@ -391,6 +774,7 @@ bottom: 0;
     right: 0;
     top: 0;
 }
+
 #titlescreen {
     width: 100%;
     height: 100%;
@@ -398,21 +782,17 @@ bottom: 0;
     justify-content: center;
     align-items: center;
 }
+
 #instructiontext {
-    
     height: 400px;
 }
-
-
 
 @media screen and (max-width: 1000px){
     #minigamebody {
         scale: 50%;
+        font-size: 20px;
+    }
+    #minigamebody .pagebutton {
+        font-size: 40px;
     }
 }
-
-
-
-
-
-
