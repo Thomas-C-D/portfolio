@@ -76,6 +76,7 @@ color: var(--biohover);
     background-color: black;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 50px;
     position: absolute;
@@ -157,6 +158,7 @@ width: 100%;
     background-color: rgb(183, 11, 11);
     border: 2px solid white;
     font-weight: bold;
+    height: 50px;
 }
 
 #resume-section {
