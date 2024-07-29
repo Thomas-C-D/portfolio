@@ -1,6 +1,7 @@
 
 let bioTxt = document.querySelector("#bio");
 let bioSpan = document.querySelector("#biochars");
+let modalClosing = document.querySelector("#resume-modal").style.top;
 function appndBio(txt) {
     for (let i = 0; i < txt.length; i++){
         bioTxt.innerHTML += `<span id='biochars' onmouseover='charCol()'>${txt[i]}</span>`;
@@ -40,6 +41,6 @@ function openResume() {
     document.querySelector('#modal-film').style.display = 'block';
 }
 function closeResume() {
-    document.querySelector('#resume-modal').style.top = '900px';
+    document.querySelector('#resume-modal').style.top = modalClosing;
     document.querySelector('#modal-film').style.display = 'none';
 }
